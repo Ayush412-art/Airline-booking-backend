@@ -1,6 +1,6 @@
 
 const CredOperations = require("./credOperations")
-const Airlines = require("../models")
+const {Airlines} = require("../models")
 
 class AirplaneRepositories extends CredOperations{
 

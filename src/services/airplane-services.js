@@ -4,7 +4,7 @@ const {AirplaneRepositories} = require("../repositories")
 
 const airplaneRepo = new AirplaneRepositories();
 
-const createairplane = async(data)=>{
+async function createairplane(data){
     try{
             const airplane = await airplaneRepo.create(data);
             return airplane

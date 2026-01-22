@@ -1,5 +1,5 @@
 
-const { where } = require("sequelize")
+
 const {logger} = require("../config")
 
 class CredOperations{

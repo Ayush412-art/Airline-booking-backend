@@ -4,9 +4,9 @@ const {airplaneservice} = require("../services")
 
 const createAirplane = async(req , res)=>{
     try{
-            const createPlane = await airplaneservice.createairplane({
+            const createPlane = await airplaneservice({
                 ModelNo : req.body.modelNumber,
-                capacity : capacity
+                capacity : req.body.capacity
             })
            return res.status(201).json({
                 success : true,
