@@ -1,5 +1,6 @@
-const createairplane = require("./airplane-services");
+const {createairplane, getsingleairplane, updateairplane, deleteairplane} = require("./airplane-services");
+const {getairplanes} = require("./airplane-services")
 
 module.exports = {
-   airplaneservice : createairplane
+    createairplane,getairplanes,getsingleairplane,updateairplane,deleteairplane
 }
