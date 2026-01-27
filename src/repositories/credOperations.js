@@ -40,20 +40,14 @@ class CredOperations{
                 return response;
             }
             catch(error){
-                 logger.error("Something went wrong in get cred opearation : cred repository")
+                 logger.error("unable to fetch the airplane data : ")
                  throw error;
             }
         }
 
         async getAll(){
-            try{
                 const response = await this.model.findAll()
                 return response;
-            }
-            catch(error){
-                 logger.error("Something went wrong in getAll cred opearation : cred repository")
-                 throw error;
-            }
         }
 
         async update(id , data) {
